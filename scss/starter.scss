@@ -79,9 +79,12 @@ $success: #7952b3;
 //
 
 @import "icon-list";
+@import "./components/header";
 
 body {
   padding: 3rem 1.5rem;
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
 
 // Style Bootstrap icons
