@@ -76,7 +76,7 @@ $success: #7952b3;
 // Custom styles
 //
 
-@import "icon-list";
+@import "./icon-list";
 @import "./components/header";
 
 body {
@@ -89,3 +89,8 @@ body {
 .bi {
   fill: currentcolor;
 }
+
+
+.hero-section {
+  border: solid red !important;
+ }

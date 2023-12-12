@@ -22,30 +22,14 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet" />
+    <link href="./scss/starter.scss" rel="stylesheet" />
   </head>
   <body>
-    <!-- header section -->
+    <!-- hero -->
     <section class="hero-section bg-primary">
-      <header class="py-5 px-3 mx-auto">
+      <!-- header section -->
+      <header class="pt-5 pb-2 px-3 mx-auto">
         <nav
           class="container navbar navbar-expand-md navbar-dark bg-primary fixed-top border-bottom border-white"
         >
@@ -116,16 +100,113 @@
         </nav>
       </header>
 
-      <main role="main" class="container">
-        <div class="starter-template bg-danger">
-          <h1>Bootstrap starter template</h1>
-          <p class="lead">
-            Use this document as a way to quickly start any new project.<br />
-            All you get is this text and a mostly barebones HTML document.
-          </p>
+      <!-- hero section -->
+      <div class="hero-section__main container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-10 p-3">
+          <div class="col-10 col-sm-8 col-lg-6 bg-white rounded p-3">
+            <div
+              class="hero-section__main--title d-flex flex-row justify-content-between align-items-center pb-3"
+            >
+              <p class="m-0">Manage cards</p>
+              <button class="btn btn-light">Add new</button>
+            </div>
+            <div
+              class="hero-section__main--card card bg-dark text-white p-3 w-75"
+            >
+              <div class="head d-flex flex-row justify-content-between">
+                <img
+                  width="70px"
+                  height="auto"
+                  src="./assets/img/header_odoo-w.svg"
+                  alt="Mastercard"
+                />
+                <button class="btn btn-secondary">Active</button>
+              </div>
+              <div class="card-number py-3">
+                <p class="m-0">CARD NUMBER</p>
+                <h4>4358-7421-9256-6682</h4>
+              </div>
+              <div class="card-info d-flex flex-row">
+                <div class="name d-flex flex-column mr-5">
+                  <p class="m-0">NAME</p>
+                  <p>John Snow</p>
+                </div>
+                <div class="date d-flex flex-column ml-5">
+                  <p class="m-0">EXPIRY DATE</p>
+                  <p>11/23</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="summary pt-4 border-bottom">
+              <div
+                class="d-flex flex-row justify-content-between align-items-baseline"
+              >
+                <p class="m-0 font-weight-bold">Starbucks</p>
+                <p class="m-0 font-weight-bold">$5,50 USD</p>
+              </div>
+              <p class="text-muted">Pending - San Francisco, United States</p>
+            </div>
+            <div class="summary pt-4 border-bottom mb-4">
+              <div
+                class="d-flex flex-row justify-content-between align-items-baseline"
+              >
+                <p class="m-0 font-weight-bold">Nike Sports</p>
+                <p class="m-0 font-weight-bold">$129,00 USD</p>
+              </div>
+              <p class="text-muted">Pending - Lisbon, Portugal</p>
+            </div>
+
+            <a href="">View all </a>
+          </div>
+          <div class="col-lg-6 d-flex flex-column">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white w-75">
+              Development done right
+            </h1>
+            <p class="lead text-white w-75">
+              Build a beautiful, modern website with flexible components built
+              from scratch.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-light btn-lg px-4 me-md-2">
+                Get started
+              </button>
+            </div>
+
+            <div class="d-flex flex-row">
+              <p class="text-white py-4 pr-4 m-0">Trusted by:</p>
+              <img
+                class="mx-2"
+                width="70px"
+                height="auto"
+                src="./assets/img/hero_icons-google-white.svg"
+                alt="airbnb"
+              />
+              <img
+                class="mx-2"
+                width="70px"
+                height="auto"
+                src="./assets/img/hero_icons-spotify-white.svg"
+                alt="airbnb"
+              />
+              <img
+                class="mx-2"
+                width="70px"
+                height="auto"
+                src="./assets/img/hero_icons-airbnb-white.svg"
+                alt="airbnb"
+              />
+              <img
+                class="mx-2"
+                width="70px"
+                height="auto"
+                src="./assets/img/hero_icons-paypal-white.svg"
+                alt="airbnb"
+              />
+            </div>
+          </div>
         </div>
-      </main>
-      <!-- /.container -->
+      </div>
     </section>
 
     <script
